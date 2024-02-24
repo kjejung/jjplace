@@ -1,0 +1,43 @@
+/* STYLE2 */
+header { position: fixed; top: 0; display: flex; justify-content: space-between; width: 100%; height: 50px; background-color: #333; z-index: 10; } 
+header .hd-cont { display: flex; justify-content: center; align-items: center; width: 100%; } 
+header .hd-btn-box { position: absolute; right: 10px; height: 30px; cursor: pointer; border: 0; background-color: transparent;} 
+header .hd-btn-box .menu-button { position: relative; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; cursor: pointer; } 
+header .hd-btn-box .menu-button::before { content: ''; position: absolute; top: -8px; left: 0; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; transition: 0.7s; } 
+header .hd-btn-box .menu-button::after { content: ''; position: absolute; top: 8px; left: 0; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; transition: 0.7s; } 
+header .hd-btn-box.clicked .menu-button { background-color: transparent; } 
+header .hd-btn-box.clicked .menu-button:before { transform: rotate(405deg); top: 0; background-color: #f99a9b; } 
+header .hd-btn-box.clicked .menu-button:after { transform: rotate(315deg); top: 0; background-color: #f99a9b; } 
+body{background-color: #404040;}
+main{ background-color:#303030;}
+
+#btnChngStyleSheet2{display: none;}
+
+.sch-google { padding-top: 70px; display: flex; justify-content: center; } 
+.sch-google table { width: 100%; } 
+.sch-google input[type="text"] { border:2px solid #222; border-radius: 30px; background-color: #222; color: #fff;} 
+.sch-google input[type="text"]:focus { outline:none; } 
+.sch-google input[type="submit"] { border: 2px solid transparent; border-radius: 30px; background-color: transparent; box-sizing: content-box; color: #fff; transition: 0.3s; } 
+.sch-google input[type="submit"]:hover { border: 2px solid #999; background-color: transparent;} 
+
+.link-box { display: flex; align-items: center; justify-content: center; border-radius: 24px;border-radius: 24px; background: #303030; box-shadow:  8px 8px 16px #262626, -8px -8px 16px #3a3a3a;; color: #fff; font-weight: bold; font-size: 18px; transition: 0.2s; } 
+.link-box:hover { scale: 1.05; } 
+.link-text { text-align: center; line-height: 1.4em; } 
+.favorite { display: flex; justify-content: space-around; margin-top: 70px; } 
+
+.folder { display: flex; justify-content: space-around; margin-top: 50px; } 
+.folder .fold { position: relative; display: flex; align-items: center; justify-content: space-around; border: 3px solid #3a3a3a; border-radius: 10px; width: 120px; height: 100px; color: #fff; transition: 0.5s; } 
+.folder .fold span { font-size: 18px; font-weight: bold; } 
+.folder .fold a { position:absolute; opacity: 0; } 
+.folder .fold:hover { width: 400px; height: 150px; padding-top: 50px; } 
+.folder .fold:hover>span { position: absolute; top: 5px; left: 15px; } 
+.folder .fold:hover a { position: unset; opacity: 1; transition: 2s; } 
+.folder .fold:hover a div.gmail { border: 3px solid #3f85ef; } 
+.folder .fold:hover a div.gdrive { border: 3px solid #fabd33; } 
+.folder .fold:hover a div.coupang { border-top: 3px solid #d33c27; border-right: 3px solid #e79b35; border-bottom: 3px solid #96b94e; border-left: 3px solid #53a2d6; } 
+.folder .fold:hover a div.aliexpress { border: 3px solid #e13a05; border-top: 3px solid #fc9c26; } 
+.folder .fold .link-box { } 
+
+.sec-1 { display: flex; justify-content: space-between; margin-top: 70px; } 
+.sec-1 > div { width: 30%; line-height: 200px; border: 5px solid #f8d49a; border-radius: 10px; text-align: center; font-weight: 700; color: #fff; transition: 0.5s; } 
+.sec-1 > div:hover { background-color: #f8d49a; } 

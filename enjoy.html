@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>제중</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style_both.css" />
+        <link rel="stylesheet" href="style1.css" id="styleSheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="hd-cont">
+                    <a href="#"
+                        ><div class="logo"><img src="img/logo.png" alt=""></div></a
+                    >
+                    <div></div>
+                    <button id="toggleSidebarButton" class="hd-btn-box">
+                        <div class="menu-button"></div>
+                    </button>
+                </div>
+            </div>
+            <aside id="sidebar">
+                <button id="btnChngStyleSheet1" class="btn-chng-css">Change</button>
+                <button id="btnChngStyleSheet2" class="btn-chng-css">Change</button>
+            </aside>
+        </header>
+        <main>
+            <section class="sch-google wrap">
+                <!-- 구글 검색 시작 -->
+                <form method="get" action="http://www.google.co.kr/search" target="_blank" style="width:100%">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="q" size="25" maxlength="255" value="" />
+                                <input type="submit" name="btnG" value="search" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+            <!-- 구글 검색 끝 -->
+            <section class="favorite wrap">
+                <a href="https://www.naver.com" target="_blank"
+                    ><div class="link-box naver"><span class="link-text">Naver</span></div></a
+                >
+                <a href="https://www.youtube.com" target="_blank"
+                    ><div class="link-box youtube"><span class="link-text">Youtube</span></div></a
+                >
+                <a href="https://mail.daum.net/top/INBOX" target="_blank"><div class="link-box daummail"><span class="link-text">Daum mail</span></div></a>
+                <a href="https://chat.openai.com/" target="_blank"><div class="link-box chatgpt"><span class="link-text">Chat gpt</span></div></a>
+            </section>
+
+            <section class="folder wrap">
+                <div class="fold">
+                    <span class="link-text">Google<br />Folder</span>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+                        ><div class="link-box gmail"><span class="link-text">Gmail</span></div></a
+                    >
+                    <a href="https://drive.google.com/drive/u/0/home" target="_blank"
+                        ><div class="link-box gdrive">
+                            <span class="link-text">Google<br />Drive</span>
+                        </div></a
+                    >
+                </div>
+                <div class="fold">
+                    <span class="link-text">Shopping<br />Folder</span>
+                    <a href="https://www.coupang.com/" target="_blank"
+                        ><div class="link-box coupang"><span class="link-text">Coupang</span></div></a
+                    >
+                    <a href="https://drive.google.com/drive/u/0/home" target="_blank"
+                        ><div class="link-box aliexpress"><span class="link-text">Aliexpress</span></div></a
+                    >
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="common.js"></script>
+</html>

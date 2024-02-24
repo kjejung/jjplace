@@ -1,0 +1,46 @@
+/* STYLE1 */
+header .hd-cont { display: flex; justify-content: center; align-items: center; width: 100%; } 
+header .hd-btn-box { position: absolute; right: 10px; height: 30px; cursor: pointer; border: 0; background-color: transparent;} 
+header .hd-btn-box .menu-button { position: relative; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; cursor: pointer; } 
+header .hd-btn-box .menu-button::before { content: ''; position: absolute; top: -8px; left: 0; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; transition: 0.3s; } 
+header .hd-btn-box .menu-button::after { content: ''; position: absolute; top: 8px; left: 0; width: 30px; height: 3px; border-radius: 5px; border: 0; background-color: #fff; transition: 0.3s; } 
+header .hd-btn-box.clicked .menu-button { background-color: transparent; } 
+header .hd-btn-box.clicked .menu-button:before { transform: rotate(405deg); top: 0; background-color: #f99a9b; } 
+header .hd-btn-box.clicked .menu-button:after { transform: rotate(315deg); top: 0; background-color: #f99a9b; } 
+body{background-image: url(유현1.jpg); background-size: invert; background-position: center; background-repeat: no-repeat; width: 100%; height: 100%;}
+main{background-color: rgba(250, 250, 250, 0.3); backdrop-filter: blur(5px);}
+
+#btnChngStyleSheet1{display: none;}
+
+.sch-google { padding-top: 120px; display: flex; justify-content: center; } 
+.sch-google table { width: 100%; } 
+.sch-google input[type="text"] { padding: 0 10px; border-radius: 30px; border: 1px solid #fff; } 
+.sch-google input[type="text"]:focus { outline:none; } 
+.sch-google input[type="submit"] {border: 2px solid #fff; border-radius: 30px; background-color: transparent; box-sizing: content-box; transition: 0.3s; } 
+.sch-google input[type="submit"]:hover { background-color: #fff; } 
+
+.link-box { display: flex; align-items: center; justify-content: center; width: 120px; height: 100px; border-radius: 10px; color: #000; font-weight: bold; font-size: 18px; transition: 0.2s; } 
+.link-box:hover { scale: 1.1; } 
+.link-text { text-align: center; line-height: 1.4em; } 
+.favorite { display: flex; justify-content: space-around; margin-top: 70px; } 
+.favorite div.naver { background-color: #36c566; color: #fff; } 
+.favorite div.youtube { background-color: #fa2600; color: #fff; } 
+.favorite div.daummail { background-color: #5e8ef6; color: #fff; } 
+.favorite div.chatgpt { background-color: #79a89d; color: #fff; } 
+
+.folder { display: flex; justify-content: space-around; margin-top: 50px; } 
+.folder .fold { position: relative; display: flex; align-items: center; justify-content: space-around; border: 3px solid #f8d49a; border-radius: 10px; width: 120px; height: 100px; transition: 0.5s; } 
+.folder .fold span { font-size: 18px; font-weight: bold; } 
+.folder .fold a { position:absolute; opacity: 0; } 
+.folder .fold:hover { width: 400px; height: 150px; padding-top: 50px; } 
+.folder .fold:hover>span { position: absolute; top: 5px; left: 15px; } 
+.folder .fold:hover a { position: unset; opacity: 1; transition: 2s; } 
+.folder .fold:hover a div.gmail { border: 3px solid #3f85ef; } 
+.folder .fold:hover a div.gdrive { border: 3px solid #fabd33; } 
+.folder .fold:hover a div.coupang { border-top: 3px solid #d33c27; border-right: 3px solid #e79b35; border-bottom: 3px solid #96b94e; border-left: 3px solid #53a2d6; } 
+.folder .fold:hover a div.aliexpress { border: 3px solid #e13a05; border-top: 3px solid #fc9c26; } 
+.folder .fold .link-box { } 
+
+.sec-1 { display: flex; justify-content: space-between; margin-top: 70px; } 
+.sec-1 > div { width: 30%; line-height: 200px; border: 5px solid #f8d49a; border-radius: 10px; text-align: center; font-weight: 700; color: #fff; transition: 0.5s; } 
+.sec-1 > div:hover { background-color: #f8d49a; } 
